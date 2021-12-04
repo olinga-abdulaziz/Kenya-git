@@ -1,27 +1,15 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="{% url 'home' %}">Shopeesy</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'home' %}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'manage' %}">Managent</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{% url 'editstock' %}">Edit stock</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
+<nav>
+  <div class="logo-div">
+      <h1>Kenya <font>2</font> <font>0</font> <font style="color: red;">2</font> <font style="color: green;">2</font> </h1>
+  </div>
+  <div>
+    <ul class="ul">
+      <li><a href="">Trending</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Contact Us</a></li>
+      <li><a href="{% url 'addpost' %}">Add Post</a></li>
+      <li><a href="" class="btn btn-info">Login</a></li>
+      <li><a href="" class="btn btn-info">Logout</a></li>
+    </ul>
   </div>
 </nav>

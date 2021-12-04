@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
     {% block title %}
-        shop system with django
+        Kenya 2022 Election
     {% endblock title %}
         </title>
     
@@ -15,9 +16,12 @@
 
 <!-- Latest compiled JavaScript -->
 
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+
 </head>
 <body>
     {% include 'baseapp/navbar.html' %}
+    
     {% block contennt %}
 
     {% endblock contennt %}

@@ -1,0 +1,20 @@
+{% extends 'baseapp/main.html' %}
+
+    {% block contennt %}
+     
+    <section>
+        <div class="cup">
+            <div class="form-group">
+                <form method="POST" enctype="multipart/form-data">
+                   {% csrf_token %}
+                   {{form.media}}
+                   {{form.as_p}}
+                   <div>
+                       <input type="submit" class="btn btn-success"  value="Post">
+                   </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endblock contennt %}
+    
